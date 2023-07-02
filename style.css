@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 20px;
+}
+
+select {
+    border: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#maze-container {
+    position: relative;
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+.wall {
+    background-color: black;
+}
+
+#rat {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#cheese {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
